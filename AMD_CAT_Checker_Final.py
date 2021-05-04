@@ -58,10 +58,12 @@ def BoolChecker():
 
             if StopFlag==True and number==UserProductCleansed[-1]:
                 for product in ProductsToBeStocked:
-                    print('-'*10 + '\n' + AMDProductPage(product) + '\n' + '-'*10)
+                    webbrowser.open(AMDProductPage(product))
                 alarm()
+                input('Press Enter to continue')
             
             if number==UserProductCleansed[-1]:
+                time.sleep(5)
                 os.system('cls')
                 
             else:
