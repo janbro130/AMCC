@@ -1,4 +1,4 @@
-import requests, time, re, winsound, os
+import requests, time, re, winsound, os, webbrowser
 
 def RiverChecker(x):
     locale = 'de_DE'
